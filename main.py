@@ -9,7 +9,13 @@ from flask_sqlalchemy import SQLAlchemy
 
 # add routes and handlers here
 
-
+    # user validation handled in login route
+    # use database queries provided by SQLAlchemy
+    # e.g., User.query.filter_by(field_name=value).first()
+    
+    # user login status handled by adding user email to session after log in
+    # session['user'] = user.email; check login status with if not 'user' in
+    # session 
 
 if __name__ == "__main__":
     app.run()
