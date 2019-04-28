@@ -8,7 +8,8 @@ from flask_sqlalchemy import SQLAlchemy
 # define global functions and variables here 
 
 # add routes and handlers here
-
+@app.route('/', methods=['GET', 'POST'])
+def home():
     # user validation handled in login route
     # use database queries provided by SQLAlchemy
     # e.g., User.query.filter_by(field_name=value).first()
