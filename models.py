@@ -1,3 +1,6 @@
+from app import db
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 # add classes for db tables here
 
 # maybe add fields to track what apps the user has enabled?
