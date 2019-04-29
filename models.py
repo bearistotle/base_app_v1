@@ -9,7 +9,7 @@ class User(db.Model):
     email = db.Column(db.String(120), unique=True, nullable=False)
     password_hash = db.Column(db.String(120), nullable=False)
     date_created = db.Column(db.Date())
-    phone_number = db.Column(db.Integer, nullable=False)
+    phone_number = db.Column(db.String(11), nullable=False)
 
     def __init__(self, email, password_hash, date_created, phone_number):
         self.email = email
